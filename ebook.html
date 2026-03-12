@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>下載《扁鵲傳人：五十年韓醫心路》| 扁康韓醫院</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+      background: linear-gradient(160deg, #0d3d1e 0%, #1a5c2a 60%, #2d8a45 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #fff;
+    }
+    :root {
+      --green-dark:  #1a5c2a;
+      --green:       #2d8a45;
+      --gold:        #c8922a;
+      --gold-light:  #f0c060;
+    }
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 52px 44px;
+      max-width: 700px;
+      width: 100%;
+      color: #1a1a2e;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,.3);
+    }
+    .checkmark {
+      width: 80px; height: 80px;
+      background: linear-gradient(135deg, #2d8a45, #1a5c2a);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 24px;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .sub { color: #666; font-size: 1rem; margin-bottom: 36px; line-height: 1.7; }
+
+    /* Ebook box */
+    .ebook-box {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      border-radius: 16px;
+      padding: 28px 24px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .ebook-box .icon { font-size: 3.5rem; flex-shrink: 0; }
+    .ebook-box-title { color: #fff; font-size: 1.2rem; font-weight: 800; line-height: 1.4; }
+    .ebook-box-sub { color: rgba(255,255,255,.7); font-size: .85rem; margin-top: 6px; }
+
+    .btn-download {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold), #e0a030);
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 18px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(200,146,42,.4);
+      transition: transform .2s;
+    }
+    .btn-download:hover { transform: translateY(-2px); }
+
+    .btn-buy {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(29,92,42,.35);
+      transition: transform .2s;
+    }
+    .btn-buy:hover { transform: translateY(-2px); }
+
+    .divider {
+      margin: 24px 0;
+      border: none;
+      border-top: 1px solid #eee;
+    }
+
+    /* Chapter preview */
+    .chapter-preview {
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .chapter-preview h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+    .chapter-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .chapter-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: .92rem;
+      color: #555;
+    }
+    .ch-num {
+      background: var(--green);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 800;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Bonus offer */
+    .bonus {
+      background: #fff8ec;
+      border: 2px solid #f0c060;
+      border-radius: 16px;
+      padding: 24px 20px;
+      margin: 28px 0;
+    }
+    .bonus-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+    }
+    .bonus h3 { color: var(--green-dark); font-size: 1.05rem; margin-bottom: 8px; }
+    .bonus p { color: #666; font-size: .9rem; }
+
+    .footer-note {
+      font-size: .8rem;
+      color: #999;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .card { padding: 36px 24px; }
+      .ebook-box { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="checkmark">✓</div>
+    <h1>感謝您！<br>您的電子書已準備好了</h1>
+    <p class="sub">電子書下載鏈接已發送至您的郵箱，請檢查收件箱（包括垃圾郵件夾）。您也可以直接在此頁面閱讀或下載。</p>
+
+    <div class="ebook-box">
+      <div class="icon">📜</div>
+      <div>
+        <div class="ebook-box-title">《扁鵲傳人：五十年韓醫心路》<br>徐孝錫院長著 · 繁體中文版</div>
+        <div class="ebook-box-sub">完整電子書 · 共 5 章 · 即時閱讀</div>
+      </div>
+    </div>
+
+    <a href="guide-biankang.html" target="_blank" class="btn-download">
+      📖 立即閱讀電子書
+    </a>
+
+    <hr class="divider" />
+
+    <div class="chapter-preview">
+      <h3>📚 電子書內容目錄</h3>
+      <ul class="chapter-list">
+        <li><div class="ch-num">序</div>寫給海外遊子的一封信——徐孝錫院長親筆</li>
+        <li><div class="ch-num">1</div>從釜山到世界：一個少年的使命感，從一碗藥湯開始</li>
+        <li><div class="ch-num">2</div>千年智慧中的「肺」：傳統東方醫學如何看待呼吸與身體</li>
+        <li><div class="ch-num">3</div>扁康丸的誕生：一個配方，五十年的研究與完善</li>
+        <li><div class="ch-num">4</div>異鄉的身體：海外華人的健康環境與東方調養智慧</li>
+        <li><div class="ch-num">5</div>傳承的使命：把東方醫學智慧帶給每一個需要的人</li>
+      </ul>
+    </div>
+
+    <div class="bonus">
+      <div class="bonus-tag">🎁 讀者專屬</div>
+      <h3>電子書讀者專享九折優惠</h3>
+      <p>感謝您閱讀！使用優惠碼 <strong>CLEAN10</strong> 購買扁康丸可享受 9 折優惠。限時 72 小時有效。</p>
+    </div>
+
+    <a href="index.html#order" class="btn-buy">
+      🛒 立即以優惠價購買扁康丸 →
+    </a>
+
+    <p class="footer-note">
+      有任何問題請聯繫我們：<a href="mailto:info@biankang.com" style="color:#2d8a45;">info@biankang.com</a><br>
+      <a href="index.html" style="color:#999;">← 返回首頁</a>
+    </p>
+  </div>
+</body>
+</html>

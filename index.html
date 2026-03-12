@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>扁鵲傳人電子書 |扁康丸 — 讓十五萬患者重獲健康的韓方秘方</title>
+  <meta name="description" content="五十年韓方研究成果，扁康丸通過強化肺功能提升免疫力，根治鼻炎、哮喘、異位性皮膚炎。免費下載《扁鵲傳人：五十年韓醫心路》電子書。" />
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+      color: #1a1a2e;
+      line-height: 1.7;
+      background: #fff;
+    }
+    img { max-width: 100%; }
+    a { text-decoration: none; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; line-height: 1.2; }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.3; }
+    h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); font-weight: 700; }
+    p  { font-size: clamp(1rem, 1.8vw, 1.1rem); }
+
+    /* ===== COLORS ===== */
+    :root {
+      --green-dark:  #1a5c2a;
+      --green:       #2d8a45;
+      --green-light: #4caf50;
+      --gold:        #c8922a;
+      --gold-light:  #f0c060;
+      --cream:       #faf6ef;
+      --grey-light:  #f4f4f4;
+      --text-dark:   #1a1a2e;
+      --text-mid:    #444;
+      --text-light:  #777;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold) 0%, #e0a030 100%);
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 800;
+      padding: 16px 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 6px 20px rgba(200,146,42,.45);
+      text-align: center;
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(200,146,42,.5); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 6px 20px rgba(29,92,42,.4);
+      text-align: center;
+    }
+    .btn-secondary:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(29,92,42,.45); }
+
+    /* ===== LAYOUT ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 80px 0; }
+
+    /* ===== NAV ===== */
+    nav {
+      background: var(--green-dark);
+      position: sticky; top: 0; z-index: 100;
+      padding: 16px 24px;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+    .nav-logo span { color: var(--gold-light); }
+    .nav-cta { font-size: .95rem; padding: 10px 24px; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(160deg, #0d3d1e 0%, #1a5c2a 50%, #2d8a45 100%);
+      color: #fff;
+      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; }
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: var(--gold-light);
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .hero h1 { color: #fff; margin-bottom: 20px; }
+    .hero h1 em { color: var(--gold-light); font-style: normal; }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,.85);
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      display: block;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .stat-label { font-size: .8rem; color: rgba(255,255,255,.75); margin-top: 4px; }
+
+    /* Hero optin box */
+    .hero-box {
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+      color: var(--text-dark);
+    }
+    .hero-box-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+      letter-spacing: .5px;
+    }
+    .hero-box h3 { font-size: 1.25rem; margin-bottom: 8px; color: var(--green-dark); }
+    .hero-box p { font-size: .95rem; color: var(--text-mid); margin-bottom: 20px; }
+    .ebook-preview {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      border-radius: 12px;
+      padding: 24px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .ebook-icon { font-size: 2.8rem; }
+    .ebook-title { color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.4; }
+    .ebook-sub { color: rgba(255,255,255,.7); font-size: .8rem; margin-top: 4px; }
+    .optin-form { display: flex; flex-direction: column; gap: 12px; }
+    .optin-form input[type="email"] {
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid #e5e5e5;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .optin-form input[type="email"]:focus { border-color: var(--green); }
+    .optin-form .btn-primary { width: 100%; font-size: 1.05rem; padding: 15px; }
+    .optin-privacy {
+      font-size: .78rem;
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    /* ===== PAIN SECTION ===== */
+    .pain { background: var(--cream); }
+    .pain h2 { text-align: center; margin-bottom: 16px; color: var(--green-dark); }
+    .pain-intro { text-align: center; color: var(--text-mid); max-width: 640px; margin: 0 auto 48px; }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .pain-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 24px;
+      border-left: 5px solid var(--green);
+      box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    }
+    .pain-card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .pain-card h3 { color: var(--green-dark); margin-bottom: 8px; font-size: 1.1rem; }
+    .pain-card p { color: var(--text-mid); font-size: .95rem; }
+
+    /* ===== SOLUTION ===== */
+    .solution { background: #fff; }
+    .solution-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .solution-inner { grid-template-columns: 1fr; } }
+    .solution-badge {
+      display: inline-block;
+      background: var(--cream);
+      color: var(--green-dark);
+      font-size: .85rem;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 50px;
+      border: 1px solid var(--green);
+      margin-bottom: 16px;
+    }
+    .solution h2 { color: var(--green-dark); margin-bottom: 16px; }
+    .solution-sub { color: var(--text-mid); margin-bottom: 28px; }
+    .principle-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .principle-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .check { color: var(--green); font-size: 1.3rem; flex-shrink: 0; line-height: 1.5; }
+    .principle-text strong { color: var(--green-dark); display: block; font-size: 1rem; }
+    .principle-text span { color: var(--text-mid); font-size: .9rem; }
+
+    .solution-visual {
+      background: linear-gradient(160deg, var(--green-dark) 0%, var(--green) 100%);
+      border-radius: 24px;
+      padding: 40px 36px;
+      color: #fff;
+    }
+    .lung-diagram {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .lung-icon { font-size: 5rem; line-height: 1; }
+    .lung-label { font-size: 1.1rem; font-weight: 700; margin-top: 8px; color: var(--gold-light); }
+    .chain-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .chain-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,.1);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: .95rem;
+    }
+    .chain-list li .arrow { color: var(--gold-light); font-size: 1rem; }
+
+    /* ===== EBOOK SECTION ===== */
+    .ebook-section {
+      background: linear-gradient(160deg, #0d3d1e 0%, #1a5c2a 100%);
+      color: #fff;
+    }
+    .ebook-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .ebook-inner { grid-template-columns: 1fr; } }
+    .ebook-mock {
+      background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+      border-radius: 16px;
+      padding: 40px 36px;
+      color: var(--text-dark);
+      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+      position: relative;
+    }
+    .ebook-mock::before {
+      content: '免費下載';
+      position: absolute;
+      top: -14px; right: 20px;
+      background: var(--gold);
+      color: #fff;
+      font-size: .85rem;
+      font-weight: 800;
+      padding: 6px 18px;
+      border-radius: 50px;
+    }
+    .ebook-mock-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .ebook-mock-sub {
+      font-size: .9rem;
+      color: var(--text-mid);
+      margin-bottom: 20px;
+    }
+    .ebook-toc { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ebook-toc li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: .9rem;
+      color: var(--text-mid);
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .ebook-toc li:last-child { border-bottom: none; }
+    .toc-num {
+      background: var(--green);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 800;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .ebook-content h2 { color: #fff; margin-bottom: 16px; }
+    .ebook-content .sub { color: rgba(255,255,255,.8); margin-bottom: 28px; }
+    .ebook-benefits { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px; }
+    .ebook-benefits li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255,255,255,.9);
+      font-size: 1rem;
+    }
+    .ebook-benefits li .check { color: var(--gold-light); }
+    .ebook-form { display: flex; gap: 12px; flex-wrap: wrap; }
+    .ebook-form input[type="email"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 14px 18px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: inherit;
+      outline: none;
+    }
+    .ebook-form .btn-primary { white-space: nowrap; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials { background: var(--grey-light); }
+    .testimonials h2 { text-align: center; color: var(--green-dark); margin-bottom: 12px; }
+    .testimonials .section-sub { text-align: center; color: var(--text-mid); max-width: 600px; margin: 0 auto 48px; }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .testi-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.06);
+      position: relative;
+    }
+    .testi-card::before {
+      content: '"';
+      font-size: 5rem;
+      color: var(--green-light);
+      opacity: .2;
+      position: absolute;
+      top: 10px; left: 16px;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .testi-stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 12px; }
+    .testi-text { color: var(--text-mid); font-size: .95rem; margin-bottom: 16px; line-height: 1.7; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 700; font-size: 1rem;
+    }
+    .testi-name { font-weight: 700; font-size: .95rem; color: var(--text-dark); }
+    .testi-title { font-size: .8rem; color: var(--text-light); }
+
+    /* ===== PRODUCT ===== */
+    .product { background: var(--cream); }
+    .product-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .product-inner { grid-template-columns: 1fr; } }
+    .product-visual {
+      background: linear-gradient(135deg, #0d3d1e, #2d8a45);
+      border-radius: 24px;
+      padding: 48px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .product-icon { font-size: 6rem; margin-bottom: 16px; display: block; }
+    .product-name-cn { font-size: 2.5rem; font-weight: 900; color: var(--gold-light); letter-spacing: 4px; }
+    .product-name-en { font-size: 1rem; color: rgba(255,255,255,.7); margin-top: 4px; letter-spacing: 2px; }
+    .product-tag {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: var(--gold-light);
+      font-size: .8rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-top: 16px;
+    }
+    .product h2 { color: var(--green-dark); margin-bottom: 12px; }
+    .product-desc { color: var(--text-mid); margin-bottom: 24px; }
+    .product-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+    .product-features li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 1rem;
+      color: var(--text-mid);
+    }
+    .product-features li .check { color: var(--green); font-size: 1.2rem; }
+    .product-btns { display: flex; flex-direction: column; gap: 12px; }
+    .fda-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      padding: 8px 18px;
+      font-size: .85rem;
+      color: var(--text-mid);
+      margin-top: 12px;
+    }
+    .fda-badge .shield { color: var(--green); font-size: 1rem; }
+
+    /* ===== FAQ ===== */
+    .faq { background: #fff; }
+    .faq h2 { text-align: center; color: var(--green-dark); margin-bottom: 48px; }
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item {
+      background: var(--grey-light);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--green-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-q:hover { background: var(--cream); }
+    .faq-arrow { transition: transform .3s; font-size: 1rem; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-a {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s;
+      font-size: .97rem;
+      color: var(--text-mid);
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 24px 20px; }
+
+    /* ===== FOOTER CTA ===== */
+    .footer-cta {
+      background: linear-gradient(135deg, var(--gold) 0%, #e0a030 100%);
+      text-align: center;
+      padding: 70px 24px;
+    }
+    .footer-cta h2 { color: #fff; margin-bottom: 12px; }
+    .footer-cta p { color: rgba(255,255,255,.9); margin-bottom: 32px; font-size: 1.1rem; }
+    .footer-cta .btn-secondary { background: var(--green-dark); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--text-dark);
+      color: rgba(255,255,255,.6);
+      text-align: center;
+      padding: 36px 24px;
+      font-size: .85rem;
+    }
+    footer a { color: rgba(255,255,255,.5); text-decoration: underline; }
+
+    /* ===== DIVIDER ===== */
+    .section-divider {
+      text-align: center;
+      margin: -8px 0 48px;
+    }
+    .section-divider .line {
+      display: inline-block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+      border-radius: 2px;
+    }
+
+    /* ===== BADGES ROW ===== */
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin: 48px 0 0;
+    }
+    .badge-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: .9rem;
+      color: var(--text-mid);
+      box-shadow: 0 2px 10px rgba(0,0,0,.05);
+    }
+    .badge-item .bicon { font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">扁康丸 <span>BianKang</span></div>
+    <a href="#ebook" class="btn-primary nav-cta">🎁 免費下載健康指南</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">🌿 五十年韓方醫學研究成果</div>
+        <h1>清肺，才是<em>真正的免疫力</em>根本</h1>
+        <p class="hero-sub">鼻炎、哮喘、異位性皮膚炎、反復感冒……這些困擾您多年的問題，其實都源自同一個病根——肺功能不足。</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">15萬+</span>
+            <div class="stat-label">臨床治療患者</div>
+          </div>
+          <div class="stat">
+            <span class="stat-num">50年</span>
+            <div class="stat-label">潛心研究</div>
+          </div>
+          <div class="stat">
+            <span class="stat-num">30+</span>
+            <div class="stat-label">國家出口銷售</div>
+          </div>
+        </div>
+        <a href="#ebook" class="btn-primary">🎁 立即免費下載《扁鵲傳人：五十年韓醫心路》</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-box">
+          <div class="hero-box-badge">限時免費 · 電子書</div>
+          <h3>《扁鵲傳人：五十年韓醫心路》</h3>
+          <p>了解如何通過強化肺功能，從根本上提升免疫力，改善過敏性體質</p>
+          <div class="ebook-preview">
+            <div class="ebook-icon">📗</div>
+            <div>
+              <div class="ebook-title">扁鵲傳人：五十年韓醫心路<br>徐孝錫院長著 · 五十年韓醫心路</div>
+              <div class="ebook-sub">中文版 · 完整 PDF · 即時下載</div>
+            </div>
+          </div>
+          <form class="optin-form" onsubmit="handleSubmit(event)">
+            <input type="email" placeholder="請輸入您的 Email 地址" required />
+            <button type="submit" class="btn-primary">🎁 免費獲取電子書 →</button>
+          </form>
+          <p class="optin-privacy">🔒 我們尊重您的隱私，絕不發送垃圾郵件</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAIN ===== -->
+<section class="pain">
+  <div class="container">
+    <h2>您是否長期被這些問題困擾？</h2>
+    <div class="section-divider"><div class="line"></div></div>
+    <p class="pain-intro">這些看似「不同」的疾病，其實都有一個共同的根源——肺功能不足，導致免疫力低下</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="icon">🤧</div>
+        <h3>慢性鼻炎 / 鼻竇炎</h3>
+        <p>365天流鼻涕、鼻塞、打噴嚏，換季時症狀更嚴重，試過各種藥物卻始終無法根治</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">😮‍💨</div>
+        <h3>哮喘 / 支氣管炎</h3>
+        <p>深夜咳嗽、呼吸困難，不敢劇烈運動，長期依賴類固醇吸入器但無法真正解決問題</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">🔴</div>
+        <h3>異位性皮膚炎 / 濕疹</h3>
+        <p>皮膚嚴重搔癢、出疹、滲液，影響睡眠和社交，外用類固醇藥膏只能暫時壓制症狀</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">🤒</div>
+        <h3>反復感冒 / 免疫力低下</h3>
+        <p>一年感冒多次，每次都要很久才能恢復，身邊的人感冒您總是最先被傳染</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">😞</div>
+        <h3>皮膚問題（青春痘 / 老年斑）</h3>
+        <p>痘痘反復不斷，老年斑越來越多，表面治療效果甚微，感覺是體內有問題</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">💊</div>
+        <h3>長期用藥卻無法根治</h3>
+        <p>西藥只能控制症狀，停藥即復發；嘗試過多種治療方法，依然找不到真正的解決方案</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOLUTION ===== -->
+<section class="solution">
+  <div class="container">
+    <div class="solution-inner">
+      <div>
+        <div class="solution-badge">扁康醫學核心理論</div>
+        <h2>肺臟，是您身體<br>最重要的健康守門人</h2>
+        <p class="solution-sub">五十年前，韓醫師徐孝錫在治療自己頑固的扁桃體炎時發現了一個顛覆傳統的醫學原理：<strong>幾乎所有慢性疾病——無論是呼吸系統、皮膚還是免疫問題，根源都在於肺功能不足。</strong></p>
+        <ul class="principle-list">
+          <li>
+            <span class="check">✓</span>
+            <div class="principle-text">
+              <strong>肺臟是五臟之首</strong>
+              <span>肺功能提升後，心臟、腎臟、大腸等其他臟器功能也隨之改善</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div class="principle-text">
+              <strong>扁桃體是免疫力的大本營</strong>
+              <span>淋巴腺之王，守護喉嚨，阻擋一切病毒細菌的第一道防線</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div class="principle-text">
+              <strong>皮膚問題 = 肺功能不足</strong>
+              <span>「肺主皮毛」——清肺後，皮膚廢物可以順利排出，各種皮膚病自然改善</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div class="principle-text">
+              <strong>現代人只使用 1/6 的肺功能</strong>
+              <span>通過扁康療法和基礎呼吸法，可以逐步恢復完整的肺功能</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="solution-visual">
+        <div class="lung-diagram">
+          <div class="lung-icon">🫁</div>
+          <div class="lung-label">肺 · 健康的核心</div>
+        </div>
+        <ul class="chain-list">
+          <li><span class="arrow">▶</span>清肺熱、強化肺功能</li>
+          <li><span class="arrow">▶</span>扁桃體功能恢復（淋巴球活躍）</li>
+          <li><span class="arrow">▶</span>免疫識別能力大幅提升</li>
+          <li><span class="arrow">▶</span>阻擋病毒、細菌、過敏原</li>
+          <li><span class="arrow">▶</span>呼吸系統疾病根治</li>
+          <li><span class="arrow">▶</span>皮膚廢物順暢排出</li>
+          <li><span class="arrow">✨</span>健康百歲，自然達成</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EBOOK SECTION ===== -->
+<section class="ebook-section" id="ebook">
+  <div class="container">
+    <div class="ebook-inner">
+      <div class="ebook-mock">
+        <div class="ebook-mock-title">《扁鵲傳人：五十年韓醫心路》<br>徐孝錫院長著 · 扁康韓醫院創辦人</div>
+        <div class="ebook-mock-sub">繁體中文電子書 · 免費下載 · 即時閱讀</div>
+        <ul class="ebook-toc">
+          <li>
+            <div class="toc-num">序</div>
+            <span>寫給海外遊子的一封信——院長親筆</span>
+          </li>
+          <li>
+            <div class="toc-num">1</div>
+            <span>從釜山到世界：一個少年的使命感，從一碗藥湯開始</span>
+          </li>
+          <li>
+            <div class="toc-num">2</div>
+            <span>千年智慧中的「肺」：傳統東方醫學的呼吸哲學</span>
+          </li>
+          <li>
+            <div class="toc-num">3</div>
+            <span>扁康丸的誕生：一個配方，五十年的研究與完善</span>
+          </li>
+          <li>
+            <div class="toc-num">4</div>
+            <span>異鄉的身體：海外華人的健康環境與調養智慧</span>
+          </li>
+          <li>
+            <div class="toc-num">5</div>
+            <span>傳承的使命：把東方醫學智慧帶給每一個需要的人</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ebook-content">
+        <h2>免費閱讀這本<br>五十年行醫心路故事</h2>
+        <p class="sub">跟隨扁康韓醫院創辦人徐孝錫院長，走過他五十年的韓醫研究歷程，了解扁康丸背後的東方醫學智慧與文化傳承</p>
+        <ul class="ebook-benefits">
+          <li><span class="check">✓</span>認識創辦人的行醫故事與扁鵲精神傳承</li>
+          <li><span class="check">✓</span>了解傳統東方醫學對呼吸與健康的哲學觀</li>
+          <li><span class="check">✓</span>探索扁康丸五十年配方研究的歷史</li>
+          <li><span class="check">✓</span>掌握海外華人日常養生的傳統生活智慧</li>
+          <li><span class="check">✓</span>感受代代相傳的東方草本文化之美</li>
+        </ul>
+        <form class="ebook-form" onsubmit="handleSubmit(event)">
+          <input type="email" placeholder="請輸入 Email 地址" required />
+          <button type="submit" class="btn-primary">立即免費下載 →</button>
+        </form>
+        <p style="color:rgba(255,255,255,.6); font-size:.82rem; margin-top:12px;">🔒 您的信息安全受到保護，我們絕不分享您的個人資料</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <h2>真實患者的康復見證</h2>
+    <div class="section-divider"><div class="line"></div></div>
+    <p class="section-sub">來自世界各地的患者，在使用扁康療法後重獲健康的真實故事</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「服用扁康丸一個月，感覺症狀慢慢消失了。兩個月身體輕快，鼻涕和咳嗽症狀都不見了。三個月後腳氣也好了，搔癢症狀也沒了。我就像重獲新生一樣！」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">申</div>
+          <div>
+            <div class="testi-name">申鉉國（75歲）</div>
+            <div class="testi-title">畫家 · 雞龍山</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「母親三十年的鼻炎，只用三個月就治好了！我和妻子、女兒也感覺效果非常神奇，以前每年要得一兩次重感冒，現在幾乎沒什麼感覺就過去了。」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">劉</div>
+          <div>
+            <div class="testi-name">劉南奎教練</div>
+            <div class="testi-title">韓國國家乒乓球隊教練</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「女兒的異位性皮膚炎六年了，全身都是黑色的痂。堅持治療七個月後，黑色的痂不知不覺脫落，長出了新肉，皮膚也變白淨了。現在孩子不再得感冒，還長高長胖了。」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">鄭</div>
+          <div>
+            <div class="testi-name">鄭光進（父親）</div>
+            <div class="testi-title">異位性皮膚炎患者家屬</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「嗓子啞、咳嗽、呼吸困難讓我無法成眠。服用扁康丸三四個月後，咳嗽慢慢減輕，睡眠好，頭腦清醒，皮膚也變白淨了。腳跟原來很粗糙，現在也好多了。」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">金</div>
+          <div>
+            <div class="testi-name">金熙英（退休教授）</div>
+            <div class="testi-title">肺纖維化康復患者</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「作為首爾大學在職教授，我讓學院藥檢中心檢測扁康丸。結果：不含類固醇、不含農藥、不含防腐劑，186種有害物質一種都沒有。這是最權威西醫大夫親自驗證的韓藥。」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <div class="testi-name">首爾大學在職教授</div>
+            <div class="testi-title">（化名保護隱私）</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">「被診斷為慢性阻塞性肺病，戒煙加上登山配合扁康丸，六個月後重症轉為輕微。一年後在大醫院做肺功能檢查，被診斷為肺活量正常。主治醫師問我有什麼秘訣？」</p>
+        <div class="testi-author">
+          <div class="testi-avatar">李</div>
+          <div>
+            <div class="testi-name">李振成（65歲）</div>
+            <div class="testi-title">慢性阻塞性肺病康復患者</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="badges">
+      <div class="badge-item"><span class="bicon">🇺🇸</span>美國 FDA 成分安全認證</div>
+      <div class="badge-item"><span class="bicon">🏥</span>首爾大學藥檢中心認可</div>
+      <div class="badge-item"><span class="bicon">🌏</span>出口 30+ 個國家</div>
+      <div class="badge-item"><span class="bicon">👥</span>15萬+ 患者臨床驗證</div>
+      <div class="badge-item"><span class="bicon">⏰</span>50年研究歷史</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT ===== -->
+<section class="product">
+  <div class="container">
+    <div class="product-inner">
+      <div class="product-visual">
+        <span class="product-icon">🌿</span>
+        <div class="product-name-cn">扁康丸</div>
+        <div class="product-name-en">BIANKANG WAN · Korean Herbal Formula</div>
+        <div class="product-tag">味道像大麥茶 · 無需忌口 · 方便服用</div>
+      </div>
+      <div>
+        <h2>扁康丸——<br>清肺免疫力的核心配方</h2>
+        <p class="product-desc">以沙蔘、桔梗、金銀花、麥門冬等十餘種珍貴韓方藥材，按照黃金比例精心配製，通過清除肺泡積熱、強化扁桃體功能，從根本上提升免疫力。</p>
+        <ul class="product-features">
+          <li><span class="check">✓</span>不含類固醇、農藥、防腐劑（FDA 認證）</li>
+          <li><span class="check">✓</span>口感清淡如大麥茶，孩子和大人都易於服用</li>
+          <li><span class="check">✓</span>服用期間無需忌口，不干擾日常飲食</li>
+          <li><span class="check">✓</span>方便攜帶的固體丸劑形式</li>
+          <li><span class="check">✓</span>適合全家使用——從兒童到老年人</li>
+          <li><span class="check">✓</span>出口美國、日本、歐洲等 30 多個國家</li>
+        </ul>
+        <div class="product-btns">
+          <a href="#order" class="btn-primary">🛒 立即購買扁康丸 →</a>
+          <a href="#ebook" class="btn-secondary">🎁 先下載免費電子書</a>
+        </div>
+        <div class="fda-badge"><span class="shield">🛡️</span>通過美國 FDA 成分安全檢測 · 無任何有害物質</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+  <div class="container">
+    <h2>常見問題解答</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          扁康丸適合哪些人服用？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">扁康丸適合患有鼻炎、哮喘、異位性皮膚炎、支氣管炎、慢性感冒，或希望提升免疫力的人士服用。從兒童到老年人均可服用。特別是長期依賴西藥卻未能根治的慢性患者，扁康丸提供從根本上改善體質的方案。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          服用時需要忌口嗎？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">這是扁康丸的一大特點——服用期間無需忌口，想吃什麼都可以。唯一的建議是遵守「過猶不及」的飲食原則，適量飲食。當然，應盡量減少吸煙、過量飲酒和化學添加劑多的快餐食品。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          需要服用多久才能看到效果？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">一般輕症患者服用 1-2 個月即可感受到明顯改善；慢性患者通常需要 6 個月的完整療程；嚴重的肺氣腫、肺纖維化等重症患者可能需要 1-1.5 年的持續治療。服藥期間可能出現「瞑眩反應」（症狀暫時加重），這是身體排毒的正常過程，請勿中斷治療。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          扁康丸有副作用嗎？是否安全？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">扁康丸已通過美國 FDA 成分安全檢測，以及首爾大學藥檢中心的全面檢驗，確認不含類固醇、農藥、防腐劑，以及其他 186 種有害物質。扁康丸為純天然韓方草藥，安全性有充分的臨床驗證。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          什麼是「瞑眩反應」？我需要擔心嗎？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">「瞑眩反應」是東方醫學中的「好轉反應」——身體在排出積累的毒素和廢物時，症狀可能暫時加重。這是治療有效的信號，不是副作用。病情越重，瞑眩反應可能越明顯。此時配合有氧運動多排汗，有助於加速排毒過程。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          可以與西藥一起服用嗎？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">扁康丸採用純天然草藥配製，一般可與西藥並用。但若您正在服用特定藥物，建議諮詢您的主治醫師。若正在使用類固醇藥物，需要在醫師指導下逐步調整，切勿突然停藥。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER CTA ===== -->
+<section class="footer-cta" id="order">
+  <div class="container">
+    <h2>立即開始您的健康之旅</h2>
+    <p>先免費下載《扁鵲傳人：五十年韓醫心路》，深入了解扁康醫學原理，<br>再決定是否購買扁康丸——我們對療效充滿信心</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="#ebook" class="btn-secondary">🎁 免費下載健康指南</a>
+      <a href="mailto:info@biankang.com" class="btn-primary">📧 聯繫我們諮詢</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2024 扁康丸 BianKang Wan · 美國地區銷售</p>
+  <p style="margin-top:8px;">
+    <a href="#">隱私政策</a> ·
+    <a href="#">使用條款</a> ·
+    <a href="mailto:info@biankang.com">聯繫我們</a>
+  </p>
+  <p style="margin-top:12px; font-size:.8rem; color:rgba(255,255,255,.35);">
+    本網站內容僅供健康教育參考，不構成醫療建議。如有健康問題，請諮詢合格醫療專業人士。
+  </p>
+</footer>
+
+<script>
+  /* FAQ toggle */
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  /* ─── Brevo (Sendinblue) config ─────────────────────────────────────
+     Replace the two values below with your real credentials:
+     1. BREVO_API_KEY  → Brevo dashboard → SMTP & API → API Keys
+     2. BREVO_LIST_ID  → Brevo dashboard → Contacts → Lists → list numeric ID
+  ──────────────────────────────────────────────────────────────────── */
+  const BREVO_API_KEY = 'YOUR_BREVO_API_KEY';   // ← replace
+  const BREVO_LIST_ID = 0;                       // ← replace with your list ID (number)
+
+  /* Form submit – Brevo Contact API */
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form   = e.target;
+    const email  = form.querySelector('input[type="email"]').value.trim();
+    const btn    = form.querySelector('button[type="submit"]');
+    const origText = btn.textContent;
+
+    // Loading state
+    btn.disabled    = true;
+    btn.textContent = '處理中…';
+
+    // Clear any previous inline error
+    let errEl = form.querySelector('.brevo-error');
+    if (errEl) errEl.remove();
+
+    try {
+      const res = await fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': BREVO_API_KEY
+        },
+        body: JSON.stringify({
+          email: email,
+          listIds: [BREVO_LIST_ID],
+          updateEnabled: true
+        })
+      });
+
+      // 201 = created, 204 = already exists (both are success)
+      if (res.ok || res.status === 204) {
+        form.reset();
+        window.location.href = 'ebook.html';
+      } else {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.message || `HTTP ${res.status}`);
+      }
+    } catch (err) {
+      // Show inline error in Chinese
+      errEl = document.createElement('p');
+      errEl.className = 'brevo-error';
+      errEl.style.cssText = 'color:#c0392b;font-size:.85rem;margin-top:8px;';
+      errEl.textContent = '提交失敗，請稍後再試或聯繫我們。（' + err.message + '）';
+      btn.insertAdjacentElement('afterend', errEl);
+      btn.disabled    = false;
+      btn.textContent = origText;
+    }
+  }
+</script>
+</body>
+</html>
